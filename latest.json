@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "world": "Unicorn",
   "worldId": 30,
-  "startedAt": "2026-11-21T05:19:17.0271708+00:00",
-  "fetchedAt": "2026-11-21T05:19:18.6952089+00:00",
-  "fetchedAtJst": "2026-11-21T14:19:18.6952089+09:00",
+  "startedAt": "2026-11-21T05:27:04.8857767+00:00",
+  "fetchedAt": "2026-11-21T05:27:07.6418558+00:00",
+  "fetchedAtJst": "2026-11-21T14:27:07.6418558+09:00",
   "status": "fetched",
   "worldVerified": true,
   "feePercent": 5,
   "errors": [],
   "attempts": [
     {
-      "at": "2026-11-21T05:19:17.2872794+00:00",
+      "at": "2026-11-21T05:27:05.5563639+00:00",
       "attempt": 1,
       "items": [
         8,
@@ -1764,8 +1764,8 @@
       "source": "https://universalis.app/market/12",
       "quote": {
         "Item": 12,
-        "UploadMs": 1795229033945,
-        "Minimum": 74,
+        "UploadMs": 1795238741452,
+        "Minimum": 70,
         "Median": 50,
         "HistoryCount": 99,
         "HistoryUnits": 189610,
@@ -7799,7 +7799,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 15857,
@@ -7807,6 +7807,12 @@
         "ReceiveCount": 1
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 950,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -7825,7 +7831,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12526,
@@ -7833,6 +7839,12 @@
         "ReceiveCount": 1
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -7851,7 +7863,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12522,
@@ -7859,6 +7871,12 @@
         "ReceiveCount": 2
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 1843,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -7877,7 +7895,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12901,
@@ -7885,6 +7903,12 @@
         "ReceiveCount": 5
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -7903,7 +7927,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12524,
@@ -7911,6 +7935,12 @@
         "ReceiveCount": 3
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 1995,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -7929,7 +7959,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12520,
@@ -7937,6 +7967,12 @@
         "ReceiveCount": 4
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -7955,7 +7991,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12574,
@@ -7963,6 +7999,12 @@
         "ReceiveCount": 1
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -7981,7 +8023,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12534,
@@ -7989,6 +8031,12 @@
         "ReceiveCount": 4
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8007,7 +8055,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12535,
@@ -8015,6 +8063,12 @@
         "ReceiveCount": 4
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8033,7 +8087,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12539,
@@ -8041,6 +8095,12 @@
         "ReceiveCount": 4
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 653.6,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8059,7 +8119,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12599,
@@ -8067,6 +8127,12 @@
         "ReceiveCount": 7
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8085,7 +8151,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 12628,
@@ -8093,6 +8159,12 @@
         "ReceiveCount": 4
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8111,7 +8183,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 15858,
@@ -8119,6 +8191,12 @@
         "ReceiveCount": 1
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 892.05,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8137,7 +8215,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 5118,
@@ -8145,6 +8223,12 @@
         "ReceiveCount": 3
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 2.85,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8163,7 +8247,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 5121,
@@ -8171,6 +8255,12 @@
         "ReceiveCount": 3
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 981.825,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8189,7 +8279,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 6152,
@@ -8197,6 +8287,12 @@
         "ReceiveCount": 5
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 1425,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8215,7 +8311,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 5116,
@@ -8223,6 +8319,12 @@
         "ReceiveCount": 6
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 627,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8241,7 +8343,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 5113,
@@ -8249,6 +8351,12 @@
         "ReceiveCount": 8
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8267,7 +8375,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 8025,
@@ -8275,6 +8383,12 @@
         "ReceiveCount": 1
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8293,7 +8407,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 7041,
@@ -8301,6 +8415,12 @@
         "ReceiveCount": 1
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8319,7 +8439,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 8021,
@@ -8327,6 +8447,12 @@
         "ReceiveCount": 2
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8345,7 +8471,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 5347,
@@ -8353,6 +8479,12 @@
         "ReceiveCount": 5
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": 950,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     },
     {
@@ -8371,7 +8503,7 @@
         "name": "\u30AC\u30FC\u30C7\u30CB\u30F3\u30B0\u30BD\u30A4\u30EB",
         "quantity": 8
       },
-      "harvestPerPlot": null,
+      "harvestPerPlot": 3,
       "hours": null,
       "exchange": {
         "SellItem": 7588,
@@ -8379,6 +8511,12 @@
         "ReceiveCount": 3
       },
       "profitPerCycle": null,
+      "netRevenuePerCrop": null,
+      "missingInputs": [
+        "\u683D\u57F9\u6642\u9593",
+        "\u65B0\u9BAE\u306A\u7A2E\u4FA1\u683C",
+        "\u65B0\u9BAE\u306A\u571F\u4FA1\u683C"
+      ],
       "note": "1\u5DE1\u306E\u8A66\u7B97\u3002\u53CE\u7A6B\u6570\u672A\u8A2D\u5B9A\u30FB\u4FA1\u683C\u6B20\u640D\u30FB\u53E4\u3044\u76F8\u5834\u3067\u306F\u5229\u76CA\u306F\u4E0D\u660E\u3002\u4EA4\u63DB\u6BD4\u7387\u306F\u65E2\u5B58GardenSteward\u8A2D\u5B9A\u7531\u6765\u3002\u624B\u5165\u308C\u983B\u5EA6\u306F\u672A\u78BA\u8A8D\u3002"
     }
   ],
@@ -8428,6 +8566,34 @@
       "note": "\u8ABF\u9054\u53EF\u80FD\u54C1\u30FB\u88C5\u5099\u306B\u3088\u308B\u6570\u91CF\u30FB\u30D9\u30F3\u30C1\u30E3\u30FC\u30B9\u30AF\u30EA\u30C3\u30D7\u7B49\u306E\u8CBB\u7528\u304C\u672A\u8A2D\u5B9A\u306A\u3089\u4E0D\u660E\u3002\u4EBA\u6570\u306A\u3069\u306E\u500B\u4EBA\u8A2D\u5B9A\u306F\u516C\u958B\u3057\u307E\u305B\u3093\u3002"
     }
   ],
+  "quality": {
+    "requested": 37,
+    "received": 37,
+    "freshItems": 19,
+    "missingItems": [],
+    "staleItems": [
+      5113,
+      5346,
+      5386,
+      7041,
+      7588,
+      8021,
+      8025,
+      12520,
+      12526,
+      12534,
+      12535,
+      12574,
+      12599,
+      12628,
+      12901,
+      15855,
+      15856,
+      16026
+    ],
+    "gardenProfitAvailable": 0,
+    "retainerProfitAvailable": 0
+  },
   "weeklyRetainerProfit": null,
   "warning": "\u53D6\u5F97\u6210\u529F\u3068\u76F8\u5834\u306E\u65B0\u9BAE\u3055\u306F\u5225\u3067\u3059\u3002\u5229\u76CA\u306F\u58F2\u5374\u4FDD\u8A3C\u306A\u3057\u30020\u3068\u4E0D\u660E\u3092\u533A\u5225\u3002\u6295\u7A3F\u5C65\u6B74\u306F\u5168\u53D6\u5F15\u3092\u7DB2\u7F85\u3057\u307E\u305B\u3093\u3002"
 }
