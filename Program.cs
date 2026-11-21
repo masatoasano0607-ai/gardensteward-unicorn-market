@@ -81,7 +81,7 @@ html.Append("<h2>相場・販売量</h2><table><tr><th>品名</th><th>最安値<
 foreach(var i in items) html.Append($"<tr><td>{E(i.name)} ({i.id})</td><td>{E(i.quote?.Minimum)}</td><td>{E(i.quote?.Median)}</td><td>{E(i.quote?.HistoryUnits)} / {E(i.quote?.HistoryCount)}</td><td>{E(i.quote?.UploadMs>0?DateTimeOffset.FromUnixTimeMilliseconds(i.quote.UploadMs):null)}</td><td>{E(string.Join(" / ",i.issues))}</td></tr>");
 html.Append("</table><h2>畑：必要素材と1巡の利益</h2><p>作物1個の税引後売上は交換比率を反映した参考値です。材料費を引いた利益ではありません。端数は1巡の利益計算で切り捨てます。</p><table><tr><th>作物 → 売却先</th><th>必要素材</th><th>作物1個の税引後売上 G</th><th>1巡の見込み利益 G</th><th>不足情報</th></tr>");
 foreach(var g in gardens) html.Append($"<tr><td>{E(g.cropName)} → {E(g.sellName)}</td><td>{E(g.seed.name)} × {g.seed.quantity} / {E(g.soil.name)} × {g.soil.quantity}</td><td>{E(g.netRevenuePerCrop)}</td><td>{E(g.profitPerCycle)}</td><td>{E(string.Join(" / ",g.missingInputs))}</td></tr>");
-html.Append("</table><p>収穫数と栽培時間は未確認。週2〜3回のログインで維持できるか未確認のため、自動推薦はしません。</p><h2>リテイナー</h2>");
+html.Append("</table><p>収穫数は設定値を使用します。栽培時間・必要な手入れ頻度が未確認の案は、週2〜3回のログインでの運用を自動推薦しません。</p><h2>リテイナー</h2>");
 foreach(var r in retainers) html.Append($"<p>{E(r.Job)} 人数: {E(r.Count)} / 1人週間利益: {E(r.profitPerRetainer)} / 合計: {E(r.totalProfit)}</p>");
 html.Append($"<details><summary>取得・計算の詳細</summary><pre>{E(payload)}</pre></details></html>");
 File.WriteAllText("site/index.html",html.ToString());
