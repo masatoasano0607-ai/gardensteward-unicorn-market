@@ -1,0 +1,65 @@
+name: Unicorn market
+on:
+  workflow_dispatch:
+  schedule:
+    # Friday 17:17 and 18:17 JST; margin before 19:30, not an SLA.
+    - cron: '17 8,9 * * 5'
+permissions:
+  contents: read
+concurrency:
+  group: unicorn-pages
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Test
+        run: dotnet run -- --test
+      - name: Collect
+        id: collect
+        continue-on-error: true
+        run: dotnet run --no-build
+      - name: Upload report including errors
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Preserve this run for 90 days
+        uses: actions/upload-artifact@v4
+        with:
+          name: unicorn-${{ github.run_id }}-${{ github.run_attempt }}
+          path: site
+          retention-days: 90
+      - name: Mark incomplete collection
+        if: steps.collect.outcome == 'failure'
+        run: echo 'Collection incomplete. Inspect the published error report.' >> "$GITHUB_STEP_SUMMARY"
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify public files
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          curl --fail --retry 5 --retry-delay 10 "${PAGE_URL}latest.json" -o /tmp/latest.json
+          python3 - <<'PY'
+          import json, datetime
+          d=json.load(open('/tmp/latest.json'))
+          assert d['world']=='Unicorn' and d['worldId']==30
+          age=datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(d['fetchedAt'])
+          assert 0 <= age.total_seconds() < 1800, 'public report stale'
+          assert d['status']=='fetched' and d['worldVerified'], 'API incomplete; error report published'
+          PY

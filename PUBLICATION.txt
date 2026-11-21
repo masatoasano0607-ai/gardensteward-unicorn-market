@@ -1,0 +1,8 @@
+This repository contains public game item definitions and market collection code only.
+config.json is a generic watchlist and example garden conversion model.
+All retainer counts, selected venture items, yields, frequencies and personal costs are null.
+Garden harvest yields and durations are unset (0 means unknown), not actual player values.
+Garden exchange ratios and seed/soil IDs are game data, not inventory data.
+Eight plots is a generic maximum-size garden example; alternatives must not be summed.
+No inventory, character, retainer identity, housing location, credentials or original plugin config is included.
+README.txt is local deployment guidance and is intentionally not committed.

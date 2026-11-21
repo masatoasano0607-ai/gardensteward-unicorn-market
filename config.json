@@ -1,0 +1,229 @@
+{
+  "Items": {
+    "15856": "ヴォイドマンドレイクの種",
+    "15855": "アルジクラベンダーの種",
+    "43985": "ヤースラニガーリック",
+    "16026": "ガーデニングソイル",
+    "9": "アイスクリスタル",
+    "10": "ウィンドクリスタル",
+    "11": "アースクリスタル",
+    "12": "ライトニングクリスタル",
+    "13": "ウォータークリスタル",
+    "15857": "アルジクラベンダー",
+    "15858": "ヴォイドマンドレイク",
+    "8166": "サベネアの野菜",
+    "5116": "鏡鉄鉱",
+    "5121": "闇鉄鉱",
+    "5346": "亜麻",
+    "5347": "フリース",
+    "5386": "ユー原木",
+    "8": "ファイアクリスタル",
+    "16": "ウィンドクラスター",
+    "5113": "銀鉱",
+    "5118": "金鉱",
+    "6152": "ラノシア岩塩",
+    "7041": "ブルーフォックスの毛皮",
+    "7588": "鉄重石",
+    "8021": "ラッシュグラス",
+    "8025": "真綿",
+    "12520": "ハードシルバーナゲット",
+    "12522": "オーラムレギスナゲット",
+    "12524": "チタンナゲット",
+    "12526": "アダマンナゲット",
+    "12534": "精霊銀鉱",
+    "12535": "硬銀鉱",
+    "12539": "白雲母",
+    "12574": "ベアーの粗皮",
+    "12599": "キマイラのタテガミ",
+    "12628": "ディープアイの涙",
+    "12901": "アバラシア岩塩"
+  },
+  "Market": {
+    "Monitor": true,
+    "World": "Unicorn",
+    "IntervalMinutes": 10,
+    "MaxAgeHours": 24,
+    "SaleFeePercent": 5,
+    "Plans": [
+      {
+        "Crop": 15857,
+        "Seed": 15855,
+        "Soil": 16026,
+        "HarvestPerPlot": 0,
+        "Hours": 0,
+        "Plots": 8,
+        "ManualSeedCost": false,
+        "SeedCost": 0,
+        "ManualSoilCost": false,
+        "SoilCost": 0,
+        "OtherCostPerPlot": 0,
+        "Routes": [
+          {
+            "SellItem": 15857,
+            "CropCost": 1,
+            "ReceiveCount": 1
+          },
+          {
+            "SellItem": 12526,
+            "CropCost": 1,
+            "ReceiveCount": 1
+          },
+          {
+            "SellItem": 12522,
+            "CropCost": 1,
+            "ReceiveCount": 2
+          },
+          {
+            "SellItem": 12901,
+            "CropCost": 1,
+            "ReceiveCount": 5
+          },
+          {
+            "SellItem": 12524,
+            "CropCost": 1,
+            "ReceiveCount": 3
+          },
+          {
+            "SellItem": 12520,
+            "CropCost": 1,
+            "ReceiveCount": 4
+          },
+          {
+            "SellItem": 12574,
+            "CropCost": 1,
+            "ReceiveCount": 1
+          },
+          {
+            "SellItem": 12534,
+            "CropCost": 1,
+            "ReceiveCount": 4
+          },
+          {
+            "SellItem": 12535,
+            "CropCost": 1,
+            "ReceiveCount": 4
+          },
+          {
+            "SellItem": 12539,
+            "CropCost": 1,
+            "ReceiveCount": 4
+          },
+          {
+            "SellItem": 12599,
+            "CropCost": 1,
+            "ReceiveCount": 7
+          },
+          {
+            "SellItem": 12628,
+            "CropCost": 1,
+            "ReceiveCount": 4
+          }
+        ]
+      },
+      {
+        "Crop": 15858,
+        "Seed": 15856,
+        "Soil": 16026,
+        "HarvestPerPlot": 0,
+        "Hours": 0,
+        "Plots": 8,
+        "ManualSeedCost": false,
+        "SeedCost": 0,
+        "ManualSoilCost": false,
+        "SoilCost": 0,
+        "OtherCostPerPlot": 0,
+        "Routes": [
+          {
+            "SellItem": 15858,
+            "CropCost": 1,
+            "ReceiveCount": 1
+          },
+          {
+            "SellItem": 5118,
+            "CropCost": 1,
+            "ReceiveCount": 3
+          },
+          {
+            "SellItem": 5121,
+            "CropCost": 1,
+            "ReceiveCount": 3
+          },
+          {
+            "SellItem": 6152,
+            "CropCost": 1,
+            "ReceiveCount": 5
+          },
+          {
+            "SellItem": 5116,
+            "CropCost": 1,
+            "ReceiveCount": 6
+          },
+          {
+            "SellItem": 5113,
+            "CropCost": 1,
+            "ReceiveCount": 8
+          },
+          {
+            "SellItem": 8025,
+            "CropCost": 1,
+            "ReceiveCount": 1
+          },
+          {
+            "SellItem": 7041,
+            "CropCost": 1,
+            "ReceiveCount": 1
+          },
+          {
+            "SellItem": 8021,
+            "CropCost": 1,
+            "ReceiveCount": 2
+          },
+          {
+            "SellItem": 5347,
+            "CropCost": 1,
+            "ReceiveCount": 5
+          },
+          {
+            "SellItem": 7588,
+            "CropCost": 1,
+            "ReceiveCount": 3
+          }
+        ]
+      }
+    ]
+  },
+  "Retainers": [
+    {
+      "Job": "採掘",
+      "Count": null,
+      "Item": null,
+      "QuantityPerDispatch": null,
+      "DispatchesPerWeek": null,
+      "CostPerDispatch": null
+    },
+    {
+      "Job": "園芸",
+      "Count": null,
+      "Item": null,
+      "QuantityPerDispatch": null,
+      "DispatchesPerWeek": null,
+      "CostPerDispatch": null
+    },
+    {
+      "Job": "漁師",
+      "Count": null,
+      "Item": null,
+      "QuantityPerDispatch": null,
+      "DispatchesPerWeek": null,
+      "CostPerDispatch": null
+    },
+    {
+      "Job": "戦闘",
+      "Count": null,
+      "Item": null,
+      "QuantityPerDispatch": null,
+      "DispatchesPerWeek": null,
+      "CostPerDispatch": null
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "source": "https://v2.xivapi.com/api/sheet/Item",
+  "data": {
+    "schema": "exdschema@2:rev:e773c41a90aed788cf4c1c48469fa85618ef01fb",
+    "version": "a72e645591e5bf8b",
+    "rows": [
+      {
+        "row_id": 8,
+        "fields": {
+          "Name": "ファイアクリスタル"
+        }
+      },
+      {
+        "row_id": 9,
+        "fields": {
+          "Name": "アイスクリスタル"
+        }
+      },
+      {
+        "row_id": 10,
+        "fields": {
+          "Name": "ウィンドクリスタル"
+        }
+      },
+      {
+        "row_id": 11,
+        "fields": {
+          "Name": "アースクリスタル"
+        }
+      },
+      {
+        "row_id": 12,
+        "fields": {
+          "Name": "ライトニングクリスタル"
+        }
+      },
+      {
+        "row_id": 13,
+        "fields": {
+          "Name": "ウォータークリスタル"
+        }
+      },
+      {
+        "row_id": 16,
+        "fields": {
+          "Name": "ウィンドクラスター"
+        }
+      },
+      {
+        "row_id": 5113,
+        "fields": {
+          "Name": "銀鉱"
+        }
+      },
+      {
+        "row_id": 5116,
+        "fields": {
+          "Name": "鏡鉄鉱"
+        }
+      },
+      {
+        "row_id": 5118,
+        "fields": {
+          "Name": "金鉱"
+        }
+      },
+      {
+        "row_id": 5121,
+        "fields": {
+          "Name": "闇鉄鉱"
+        }
+      },
+      {
+        "row_id": 5346,
+        "fields": {
+          "Name": "亜麻"
+        }
+      },
+      {
+        "row_id": 5347,
+        "fields": {
+          "Name": "フリース"
+        }
+      },
+      {
+        "row_id": 5386,
+        "fields": {
+          "Name": "ユー原木"
+        }
+      },
+      {
+        "row_id": 6152,
+        "fields": {
+          "Name": "ラノシア岩塩"
+        }
+      },
+      {
+        "row_id": 7041,
+        "fields": {
+          "Name": "ブルーフォックスの毛皮"
+        }
+      },
+      {
+        "row_id": 7588,
+        "fields": {
+          "Name": "鉄重石"
+        }
+      },
+      {
+        "row_id": 8021,
+        "fields": {
+          "Name": "ラッシュグラス"
+        }
+      },
+      {
+        "row_id": 8025,
+        "fields": {
+          "Name": "真綿"
+        }
+      },
+      {
+        "row_id": 8166,
+        "fields": {
+          "Name": "サベネアの野菜"
+        }
+      },
+      {
+        "row_id": 12520,
+        "fields": {
+          "Name": "ハードシルバーナゲット"
+        }
+      },
+      {
+        "row_id": 12522,
+        "fields": {
+          "Name": "オーラムレギスナゲット"
+        }
+      },
+      {
+        "row_id": 12524,
+        "fields": {
+          "Name": "チタンナゲット"
+        }
+      },
+      {
+        "row_id": 12526,
+        "fields": {
+          "Name": "アダマンナゲット"
+        }
+      },
+      {
+        "row_id": 12534,
+        "fields": {
+          "Name": "精霊銀鉱"
+        }
+      },
+      {
+        "row_id": 12535,
+        "fields": {
+          "Name": "硬銀鉱"
+        }
+      },
+      {
+        "row_id": 12539,
+        "fields": {
+          "Name": "白雲母"
+        }
+      },
+      {
+        "row_id": 12574,
+        "fields": {
+          "Name": "ベアーの粗皮"
+        }
+      },
+      {
+        "row_id": 12599,
+        "fields": {
+          "Name": "キマイラのタテガミ"
+        }
+      },
+      {
+        "row_id": 12628,
+        "fields": {
+          "Name": "ディープアイの涙"
+        }
+      },
+      {
+        "row_id": 12901,
+        "fields": {
+          "Name": "アバラシア岩塩"
+        }
+      },
+      {
+        "row_id": 15855,
+        "fields": {
+          "Name": "アルジクラベンダーの種"
+        }
+      },
+      {
+        "row_id": 15856,
+        "fields": {
+          "Name": "ヴォイドマンドレイクの種"
+        }
+      },
+      {
+        "row_id": 15857,
+        "fields": {
+          "Name": "アルジクラベンダー"
+        }
+      },
+      {
+        "row_id": 15858,
+        "fields": {
+          "Name": "ヴォイドマンドレイク"
+        }
+      },
+      {
+        "row_id": 16026,
+        "fields": {
+          "Name": "ガーデニングソイル"
+        }
+      },
+      {
+        "row_id": 43985,
+        "fields": {
+          "Name": "ヤースラニガーリック"
+        }
+      }
+    ]
+  },
+  "checkedAt": "2026-11-21T04:31:45.2703081+00:00"
+}
