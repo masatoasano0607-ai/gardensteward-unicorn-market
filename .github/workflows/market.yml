@@ -4,6 +4,8 @@ on:
   schedule:
     # Friday 17:17 and 18:17 JST; margin before 19:30, not an SLA.
     - cron: '17 8,9 * * 5'
+    # Final backup: Friday 19:07 JST, with margin for collection/deployment.
+    - cron: '7 10 * * 5'
 permissions:
   contents: read
 concurrency:
@@ -15,6 +17,8 @@ jobs:
     permissions:
       contents: write
     timeout-minutes: 12
+    outputs:
+      report_sha: ${{ steps.digest.outputs.sha }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
@@ -30,6 +34,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
+      - name: Record exact report digest
+        id: digest
+        run: echo "sha=$(sha256sum site/latest.json | cut -d ' ' -f 1)" >> "$GITHUB_OUTPUT"
       - name: Publish sanitized report for GitHub connector
         run: |
           publish_dir=$(mktemp -d)
@@ -46,6 +53,8 @@ jobs:
           git add latest.json summary.json index.html
           git commit --allow-empty -m "Refresh public Unicorn market report"
           git -c "http.https://github.com/.extraheader=$auth_header" push origin HEAD:data
+          remote_sha=$(git -c "http.https://github.com/.extraheader=$auth_header" ls-remote origin refs/heads/data | cut -f 1)
+          test "$remote_sha" = "$(git rev-parse HEAD)"
       - name: Preserve this run for 90 days
         uses: actions/upload-artifact@v4
         with:
@@ -71,8 +80,15 @@ jobs:
       - name: Verify public files
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          REPORT_SHA: ${{ needs.collect.outputs.report_sha }}
         run: |
-          curl --fail --retry 5 --retry-delay 10 "${PAGE_URL}latest.json" -o /tmp/latest.json
+          for attempt in 1 2 3 4 5 6; do
+            if curl --fail --retry 2 --retry-delay 5 "${PAGE_URL}latest.json?run=${GITHUB_RUN_ID}" -o /tmp/latest.json && echo "$REPORT_SHA  /tmp/latest.json" | sha256sum --check; then
+              break
+            fi
+            if [ "$attempt" = 6 ]; then exit 1; fi
+            sleep 10
+          done
           python3 - <<'PY'
           import json, datetime
           d=json.load(open('/tmp/latest.json'))

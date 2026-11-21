@@ -22,7 +22,7 @@ foreach (var batch in ids.Chunk(100))
         var at=DateTimeOffset.UtcNow;
         result = await client.Fetch("Unicorn", batch, CancellationToken.None);
         attempts.Add(new { at, attempt, items=batch, result.Error, result.RateLimited });
-        if (result.Error == null || result.RateLimited) break;
+        if (result.Error == null && batch.All(id=>result.Quotes.ContainsKey(id)) || result.RateLimited) break;
         if (attempt<3) await Task.Delay(TimeSpan.FromSeconds(attempt*5));
     }
     if (result!.Error != null) errors.Add(result.Error);
@@ -45,6 +45,10 @@ var gardens=cfg.Market.Plans.SelectMany(p=>p.Routes.Select(r=>new {
     seed=new{item=p.Seed,name=Name(p.Seed),quantity=p.Plots},soil=new{item=p.Soil,name=Name(p.Soil),quantity=p.Plots},
     harvestPerPlot=p.HarvestPerPlot>0?(int?)p.HarvestPerPlot:null,hours=p.Hours>0?(int?)p.Hours:null,
     exchange=r,profitPerCycle=MarketMath.Profit(p,r,quotes.GetValueOrDefault(r.SellItem),quotes,cfg.Market,now),
+    netRevenuePerCrop=MarketMath.PerCrop(r,quotes.GetValueOrDefault(r.SellItem),cfg.Market.SaleFeePercent,now,cfg.Market.MaxAgeHours),
+    missingInputs=new[]{p.HarvestPerPlot<=0?"収穫数":null,p.Hours<=0?"栽培時間":null,
+        MarketMath.Cost(p.ManualSeedCost,p.SeedCost,p.Seed,quotes,now,cfg.Market.MaxAgeHours)==null?"新鮮な種価格":null,
+        MarketMath.Cost(p.ManualSoilCost,p.SoilCost,p.Soil,quotes,now,cfg.Market.MaxAgeHours)==null?"新鮮な土価格":null}.Where(x=>x!=null).ToArray(),
     note="1巡の試算。収穫数未設定・価格欠損・古い相場では利益は不明。交換比率は既存GardenSteward設定由来。手入れ頻度は未確認。"
 })).ToArray();
 var retainers=cfg.Retainers.Select(r=>new {r.Job,r.Count,r.Item,r.QuantityPerDispatch,r.DispatchesPerWeek,r.CostPerDispatch,
@@ -54,6 +58,11 @@ var retainers=cfg.Retainers.Select(r=>new {r.Job,r.Count,r.Item,r.QuantityPerDis
 var report=new { schemaVersion=1,world="Unicorn",worldId=30,startedAt=started,fetchedAt=now,
     fetchedAtJst=now.ToOffset(TimeSpan.FromHours(9)),status=errors.Count>0||items.Any(i=>i.missing)?"incomplete":"fetched",
     worldVerified=quotes.Count>0,feePercent=cfg.Market.SaleFeePercent,errors,attempts,items,gardens,retainers,
+    quality=new{requested=ids.Length,received=quotes.Count,freshItems=items.Count(i=>i.fresh),
+        missingItems=items.Where(i=>i.missing).Select(i=>i.id).ToArray(),
+        staleItems=items.Where(i=>!i.missing&&!i.fresh).Select(i=>i.id).ToArray(),
+        gardenProfitAvailable=gardens.Count(g=>g.profitPerCycle.HasValue),
+        retainerProfitAvailable=retainers.Count(r=>r.profitPerRetainer.HasValue)},
     weeklyRetainerProfit=retainers.All(r=>r.totalProfit.HasValue)?retainers.Sum(r=>r.totalProfit):(decimal?)null,
     warning="取得成功と相場の新鮮さは別です。利益は売却保証なし。0と不明を区別。投稿履歴は全取引を網羅しません。" };
 Directory.CreateDirectory("site");
@@ -70,8 +79,8 @@ html.Append($"<p>取得日時（JST）: {E(report.fetchedAtJst)} / 状態: {E(re
 foreach(var error in errors) html.Append($"<p class=warn>{E(error)}</p>");
 html.Append("<h2>相場・販売量</h2><table><tr><th>品名</th><th>最安値</th><th>販売中央値</th><th>標本販売個数 / 件数</th><th>投稿日時（UTC）</th><th>状態</th></tr>");
 foreach(var i in items) html.Append($"<tr><td>{E(i.name)} ({i.id})</td><td>{E(i.quote?.Minimum)}</td><td>{E(i.quote?.Median)}</td><td>{E(i.quote?.HistoryUnits)} / {E(i.quote?.HistoryCount)}</td><td>{E(i.quote?.UploadMs>0?DateTimeOffset.FromUnixTimeMilliseconds(i.quote.UploadMs):null)}</td><td>{E(string.Join(" / ",i.issues))}</td></tr>");
-html.Append("</table><h2>畑：必要素材と1巡の利益</h2><table><tr><th>作物 → 売却先</th><th>必要素材</th><th>見込み利益 G</th></tr>");
-foreach(var g in gardens) html.Append($"<tr><td>{E(g.cropName)} → {E(g.sellName)}</td><td>{E(g.seed.name)} × {g.seed.quantity} / {E(g.soil.name)} × {g.soil.quantity}</td><td>{E(g.profitPerCycle)}</td></tr>");
+html.Append("</table><h2>畑：必要素材と1巡の利益</h2><p>作物1個の税引後売上は交換比率を反映した参考値です。材料費を引いた利益ではありません。端数は1巡の利益計算で切り捨てます。</p><table><tr><th>作物 → 売却先</th><th>必要素材</th><th>作物1個の税引後売上 G</th><th>1巡の見込み利益 G</th><th>不足情報</th></tr>");
+foreach(var g in gardens) html.Append($"<tr><td>{E(g.cropName)} → {E(g.sellName)}</td><td>{E(g.seed.name)} × {g.seed.quantity} / {E(g.soil.name)} × {g.soil.quantity}</td><td>{E(g.netRevenuePerCrop)}</td><td>{E(g.profitPerCycle)}</td><td>{E(string.Join(" / ",g.missingInputs))}</td></tr>");
 html.Append("</table><p>収穫数と栽培時間は未確認。週2〜3回のログインで維持できるか未確認のため、自動推薦はしません。</p><h2>リテイナー</h2>");
 foreach(var r in retainers) html.Append($"<p>{E(r.Job)} 人数: {E(r.Count)} / 1人週間利益: {E(r.profitPerRetainer)} / 合計: {E(r.totalProfit)}</p>");
 html.Append($"<details><summary>取得・計算の詳細</summary><pre>{E(payload)}</pre></details></html>");
