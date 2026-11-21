@@ -12,6 +12,8 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -28,6 +30,22 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
+      - name: Publish sanitized report for GitHub connector
+        run: |
+          publish_dir=$(mktemp -d)
+          cp site/latest.json site/summary.json site/index.html "$publish_dir/"
+          cd "$publish_dir"
+          git init -b data
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          auth_header=$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)
+          if git -c "http.https://github.com/.extraheader=$auth_header" fetch origin data --depth=1; then
+            git reset --soft FETCH_HEAD
+          fi
+          git add latest.json summary.json index.html
+          git commit --allow-empty -m "Refresh public Unicorn market report"
+          git -c "http.https://github.com/.extraheader=$auth_header" push origin HEAD:data
       - name: Preserve this run for 90 days
         uses: actions/upload-artifact@v4
         with:

@@ -59,6 +59,9 @@ var report=new { schemaVersion=1,world="Unicorn",worldId=30,startedAt=started,fe
 Directory.CreateDirectory("site");
 var payload=JsonSerializer.Serialize(report,json);
 File.WriteAllText("site/latest.json",payload);
+var compact=System.Text.Json.Nodes.JsonNode.Parse(payload)!;
+foreach(var item in compact["items"]!.AsArray()) item?["quote"]?.AsObject().Remove("Sales");
+File.WriteAllText("site/summary.json",compact.ToJsonString(json));
 Directory.CreateDirectory("site/snapshots");
 File.WriteAllText($"site/snapshots/{now:yyyyMMddTHHmmssZ}.json",payload);
 string E(object? v)=>WebUtility.HtmlEncode(v?.ToString()??"不明");
@@ -70,7 +73,7 @@ foreach(var i in items) html.Append($"<tr><td>{E(i.name)} ({i.id})</td><td>{E(i.
 html.Append("</table><h2>畑：必要素材と1巡の利益</h2><table><tr><th>作物 → 売却先</th><th>必要素材</th><th>見込み利益 G</th></tr>");
 foreach(var g in gardens) html.Append($"<tr><td>{E(g.cropName)} → {E(g.sellName)}</td><td>{E(g.seed.name)} × {g.seed.quantity} / {E(g.soil.name)} × {g.soil.quantity}</td><td>{E(g.profitPerCycle)}</td></tr>");
 html.Append("</table><p>収穫数と栽培時間は未確認。週2〜3回のログインで維持できるか未確認のため、自動推薦はしません。</p><h2>リテイナー</h2>");
-foreach(var r in retainers) html.Append($"<p>{E(r.Job)} {r.Count}人 / 1人週間利益: {E(r.profitPerRetainer)} / 合計: {E(r.totalProfit)}</p>");
+foreach(var r in retainers) html.Append($"<p>{E(r.Job)} 人数: {E(r.Count)} / 1人週間利益: {E(r.profitPerRetainer)} / 合計: {E(r.totalProfit)}</p>");
 html.Append($"<details><summary>取得・計算の詳細</summary><pre>{E(payload)}</pre></details></html>");
 File.WriteAllText("site/index.html",html.ToString());
 Console.WriteLine($"{report.status}: {quotes.Count}/{ids.Length} items; {errors.Count} errors; output=site");
