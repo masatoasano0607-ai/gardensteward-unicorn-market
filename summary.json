@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "world": "Unicorn",
   "worldId": 30,
-  "startedAt": "2026-11-27T18:11:56.1583846\u002B00:00",
-  "fetchedAt": "2026-11-27T18:11:58.1116139\u002B00:00",
-  "fetchedAtJst": "2026-11-28T03:11:58.1116139\u002B09:00",
+  "startedAt": "2026-11-27T19:25:47.3273342\u002B00:00",
+  "fetchedAt": "2026-11-27T19:25:48.3838593\u002B00:00",
+  "fetchedAtJst": "2026-11-28T04:25:48.3838593\u002B09:00",
   "status": "fetched",
   "worldVerified": true,
   "feePercent": 5,
   "errors": [],
   "attempts": [
     {
-      "at": "2026-11-27T18:11:56.6130479\u002B00:00",
+      "at": "2026-11-27T19:25:47.5198093\u002B00:00",
       "attempt": 1,
       "items": [
         8,
@@ -63,20 +63,20 @@
       "source": "https://universalis.app/market/8",
       "quote": {
         "Item": 8,
-        "UploadMs": 1795797986622,
-        "Minimum": 48,
+        "UploadMs": 1795805607931,
+        "Minimum": 45,
         "Median": 48,
         "HistoryCount": 100,
-        "HistoryUnits": 188949,
-        "LastSaleSeconds": 1795796687,
-        "WeightedSalePrice": 47.358705259091077486517525893,
-        "SaleReference": 48
+        "HistoryUnits": 191619,
+        "LastSaleSeconds": 1795805584,
+        "WeightedSalePrice": 47.893058621535442727495707628,
+        "SaleReference": 45
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 26992.714285714285714285714286,
+      "observedUnitsPerDay": 27374.142857142857142857142857,
       "issues": []
     },
     {
@@ -87,18 +87,18 @@
         "Item": 9,
         "UploadMs": 1795774452557,
         "Minimum": 60,
-        "Median": 62.5,
-        "HistoryCount": 48,
-        "HistoryUnits": 55173,
+        "Median": 63,
+        "HistoryCount": 47,
+        "HistoryUnits": 54173,
         "LastSaleSeconds": 1795768092,
-        "WeightedSalePrice": 64.975749007666793540318634115,
+        "WeightedSalePrice": 65.030679489782733095822642276,
         "SaleReference": 60
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 7881.8571428571428571428571429,
+      "observedUnitsPerDay": 7739,
       "issues": []
     },
     {
@@ -173,20 +173,20 @@
       "source": "https://universalis.app/market/13",
       "quote": {
         "Item": 13,
-        "UploadMs": 1795797970601,
+        "UploadMs": 1795805621451,
         "Minimum": 48,
         "Median": 48,
         "HistoryCount": 100,
-        "HistoryUnits": 211665,
-        "LastSaleSeconds": 1795796713,
-        "WeightedSalePrice": 48.091219615902487421160796542,
+        "HistoryUnits": 218723,
+        "LastSaleSeconds": 1795805574,
+        "WeightedSalePrice": 48.074560059984546664045390745,
         "SaleReference": 48
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 30237.857142857142857142857143,
+      "observedUnitsPerDay": 31246.142857142857142857142857,
       "issues": []
     },
     {
@@ -861,17 +861,17 @@
         "UploadMs": 1795428285757,
         "Minimum": 988,
         "Median": 989,
-        "HistoryCount": 19,
-        "HistoryUnits": 1616,
+        "HistoryCount": 18,
+        "HistoryUnits": 1610,
         "LastSaleSeconds": 1795359410,
-        "WeightedSalePrice": 984.612004950495049504950495,
+        "WeightedSalePrice": 984.1819875776397515527950311,
         "SaleReference": 988
       },
       "fresh": false,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 230.85714285714285714285714286,
+      "observedUnitsPerDay": 230,
       "issues": [
         "\u6295\u7A3F\u304C\u53E4\u3044\u3001\u672A\u6765\u65E5\u6642\u3001\u307E\u305F\u306F\u65E5\u6642\u4E0D\u660E"
       ]
@@ -907,20 +907,20 @@
       "source": "https://universalis.app/market/43985",
       "quote": {
         "Item": 43985,
-        "UploadMs": 1795777547737,
-        "Minimum": 194,
+        "UploadMs": 1795804953436,
+        "Minimum": 220,
         "Median": 204,
-        "HistoryCount": 72,
-        "HistoryUnits": 2504,
-        "LastSaleSeconds": 1795765707,
-        "WeightedSalePrice": 208.65255591054313099041533546,
-        "SaleReference": 194
+        "HistoryCount": 82,
+        "HistoryUnits": 2853,
+        "LastSaleSeconds": 1795789261,
+        "WeightedSalePrice": 208.48264984227129337539432177,
+        "SaleReference": 204
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 357.71428571428571428571428571,
+      "observedUnitsPerDay": 407.57142857142857142857142857,
       "issues": []
     }
   ],

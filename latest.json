@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "world": "Unicorn",
   "worldId": 30,
-  "startedAt": "2026-11-27T18:11:56.1583846+00:00",
-  "fetchedAt": "2026-11-27T18:11:58.1116139+00:00",
-  "fetchedAtJst": "2026-11-28T03:11:58.1116139+09:00",
+  "startedAt": "2026-11-27T19:25:47.3273342+00:00",
+  "fetchedAt": "2026-11-27T19:25:48.3838593+00:00",
+  "fetchedAtJst": "2026-11-28T04:25:48.3838593+09:00",
   "status": "fetched",
   "worldVerified": true,
   "feePercent": 5,
   "errors": [],
   "attempts": [
     {
-      "at": "2026-11-27T18:11:56.6130479+00:00",
+      "at": "2026-11-27T19:25:47.5198093+00:00",
       "attempt": 1,
       "items": [
         8,
@@ -63,13 +63,48 @@
       "source": "https://universalis.app/market/8",
       "quote": {
         "Item": 8,
-        "UploadMs": 1795797986622,
-        "Minimum": 48,
+        "UploadMs": 1795805607931,
+        "Minimum": 45,
         "Median": 48,
         "HistoryCount": 100,
-        "HistoryUnits": 188949,
-        "LastSaleSeconds": 1795796687,
+        "HistoryUnits": 191619,
+        "LastSaleSeconds": 1795805584,
         "Sales": [
+          {
+            "Timestamp": 1795805584,
+            "Quantity": 3000,
+            "PricePerUnit": 49
+          },
+          {
+            "Timestamp": 1795805583,
+            "Quantity": 3000,
+            "PricePerUnit": 49
+          },
+          {
+            "Timestamp": 1795805578,
+            "Quantity": 1000,
+            "PricePerUnit": 43
+          },
+          {
+            "Timestamp": 1795805577,
+            "Quantity": 1000,
+            "PricePerUnit": 43
+          },
+          {
+            "Timestamp": 1795805514,
+            "Quantity": 1000,
+            "PricePerUnit": 43
+          },
+          {
+            "Timestamp": 1795805513,
+            "Quantity": 1000,
+            "PricePerUnit": 43
+          },
+          {
+            "Timestamp": 1795805512,
+            "Quantity": 1000,
+            "PricePerUnit": 43
+          },
           {
             "Timestamp": 1795796687,
             "Quantity": 536,
@@ -534,51 +569,16 @@
             "Timestamp": 1795605520,
             "Quantity": 500,
             "PricePerUnit": 34
-          },
-          {
-            "Timestamp": 1795605519,
-            "Quantity": 600,
-            "PricePerUnit": 34
-          },
-          {
-            "Timestamp": 1795605518,
-            "Quantity": 600,
-            "PricePerUnit": 34
-          },
-          {
-            "Timestamp": 1795605517,
-            "Quantity": 3000,
-            "PricePerUnit": 33
-          },
-          {
-            "Timestamp": 1795605475,
-            "Quantity": 1000,
-            "PricePerUnit": 34
-          },
-          {
-            "Timestamp": 1795605473,
-            "Quantity": 30,
-            "PricePerUnit": 32
-          },
-          {
-            "Timestamp": 1795605250,
-            "Quantity": 1100,
-            "PricePerUnit": 34
-          },
-          {
-            "Timestamp": 1795605045,
-            "Quantity": 2000,
-            "PricePerUnit": 34
           }
         ],
-        "WeightedSalePrice": 47.358705259091077486517525893,
-        "SaleReference": 48
+        "WeightedSalePrice": 47.893058621535442727495707628,
+        "SaleReference": 45
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 26992.714285714285714285714286,
+      "observedUnitsPerDay": 27374.142857142857142857142857,
       "issues": []
     },
     {
@@ -589,9 +589,9 @@
         "Item": 9,
         "UploadMs": 1795774452557,
         "Minimum": 60,
-        "Median": 62.5,
-        "HistoryCount": 48,
-        "HistoryUnits": 55173,
+        "Median": 63,
+        "HistoryCount": 47,
+        "HistoryUnits": 54173,
         "LastSaleSeconds": 1795768092,
         "Sales": [
           {
@@ -828,21 +828,16 @@
             "Timestamp": 1795367073,
             "Quantity": 1000,
             "PricePerUnit": 67
-          },
-          {
-            "Timestamp": 1795199435,
-            "Quantity": 1000,
-            "PricePerUnit": 62
           }
         ],
-        "WeightedSalePrice": 64.975749007666793540318634115,
+        "WeightedSalePrice": 65.030679489782733095822642276,
         "SaleReference": 60
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 7881.8571428571428571428571429,
+      "observedUnitsPerDay": 7739,
       "issues": []
     },
     {
@@ -2148,13 +2143,48 @@
       "source": "https://universalis.app/market/13",
       "quote": {
         "Item": 13,
-        "UploadMs": 1795797970601,
+        "UploadMs": 1795805621451,
         "Minimum": 48,
         "Median": 48,
         "HistoryCount": 100,
-        "HistoryUnits": 211665,
-        "LastSaleSeconds": 1795796713,
+        "HistoryUnits": 218723,
+        "LastSaleSeconds": 1795805574,
         "Sales": [
+          {
+            "Timestamp": 1795805574,
+            "Quantity": 2000,
+            "PricePerUnit": 49
+          },
+          {
+            "Timestamp": 1795805569,
+            "Quantity": 3000,
+            "PricePerUnit": 48
+          },
+          {
+            "Timestamp": 1795805567,
+            "Quantity": 3838,
+            "PricePerUnit": 48
+          },
+          {
+            "Timestamp": 1795805525,
+            "Quantity": 1000,
+            "PricePerUnit": 47
+          },
+          {
+            "Timestamp": 1795805524,
+            "Quantity": 1000,
+            "PricePerUnit": 47
+          },
+          {
+            "Timestamp": 1795805522,
+            "Quantity": 1000,
+            "PricePerUnit": 46
+          },
+          {
+            "Timestamp": 1795805521,
+            "Quantity": 1000,
+            "PricePerUnit": 46
+          },
           {
             "Timestamp": 1795796713,
             "Quantity": 500,
@@ -2619,51 +2649,16 @@
             "Timestamp": 1795481450,
             "Quantity": 500,
             "PricePerUnit": 48
-          },
-          {
-            "Timestamp": 1795481443,
-            "Quantity": 500,
-            "PricePerUnit": 48
-          },
-          {
-            "Timestamp": 1795481442,
-            "Quantity": 500,
-            "PricePerUnit": 48
-          },
-          {
-            "Timestamp": 1795481439,
-            "Quantity": 1000,
-            "PricePerUnit": 48
-          },
-          {
-            "Timestamp": 1795481438,
-            "Quantity": 1000,
-            "PricePerUnit": 48
-          },
-          {
-            "Timestamp": 1795481436,
-            "Quantity": 500,
-            "PricePerUnit": 47
-          },
-          {
-            "Timestamp": 1795481435,
-            "Quantity": 500,
-            "PricePerUnit": 47
-          },
-          {
-            "Timestamp": 1795479564,
-            "Quantity": 1780,
-            "PricePerUnit": 48
           }
         ],
-        "WeightedSalePrice": 48.091219615902487421160796542,
+        "WeightedSalePrice": 48.074560059984546664045390745,
         "SaleReference": 48
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 30237.857142857142857142857143,
+      "observedUnitsPerDay": 31246.142857142857142857142857,
       "issues": []
     },
     {
@@ -6824,8 +6819,8 @@
         "UploadMs": 1795428285757,
         "Minimum": 988,
         "Median": 989,
-        "HistoryCount": 19,
-        "HistoryUnits": 1616,
+        "HistoryCount": 18,
+        "HistoryUnits": 1610,
         "LastSaleSeconds": 1795359410,
         "Sales": [
           {
@@ -6917,21 +6912,16 @@
             "Timestamp": 1795247145,
             "Quantity": 99,
             "PricePerUnit": 980
-          },
-          {
-            "Timestamp": 1795200464,
-            "Quantity": 6,
-            "PricePerUnit": 1100
           }
         ],
-        "WeightedSalePrice": 984.612004950495049504950495,
+        "WeightedSalePrice": 984.1819875776397515527950311,
         "SaleReference": 988
       },
       "fresh": false,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 230.85714285714285714285714286,
+      "observedUnitsPerDay": 230,
       "issues": [
         "\u6295\u7A3F\u304C\u53E4\u3044\u3001\u672A\u6765\u65E5\u6642\u3001\u307E\u305F\u306F\u65E5\u6642\u4E0D\u660E"
       ]
@@ -6968,13 +6958,63 @@
       "source": "https://universalis.app/market/43985",
       "quote": {
         "Item": 43985,
-        "UploadMs": 1795777547737,
-        "Minimum": 194,
+        "UploadMs": 1795804953436,
+        "Minimum": 220,
         "Median": 204,
-        "HistoryCount": 72,
-        "HistoryUnits": 2504,
-        "LastSaleSeconds": 1795765707,
+        "HistoryCount": 82,
+        "HistoryUnits": 2853,
+        "LastSaleSeconds": 1795789261,
         "Sales": [
+          {
+            "Timestamp": 1795789261,
+            "Quantity": 10,
+            "PricePerUnit": 210
+          },
+          {
+            "Timestamp": 1795789260,
+            "Quantity": 99,
+            "PricePerUnit": 210
+          },
+          {
+            "Timestamp": 1795787351,
+            "Quantity": 10,
+            "PricePerUnit": 154
+          },
+          {
+            "Timestamp": 1795782368,
+            "Quantity": 11,
+            "PricePerUnit": 210
+          },
+          {
+            "Timestamp": 1795782346,
+            "Quantity": 99,
+            "PricePerUnit": 224
+          },
+          {
+            "Timestamp": 1795782264,
+            "Quantity": 69,
+            "PricePerUnit": 195
+          },
+          {
+            "Timestamp": 1795782262,
+            "Quantity": 11,
+            "PricePerUnit": 194
+          },
+          {
+            "Timestamp": 1795782260,
+            "Quantity": 20,
+            "PricePerUnit": 194
+          },
+          {
+            "Timestamp": 1795782259,
+            "Quantity": 10,
+            "PricePerUnit": 190
+          },
+          {
+            "Timestamp": 1795777546,
+            "Quantity": 10,
+            "PricePerUnit": 205
+          },
           {
             "Timestamp": 1795765707,
             "Quantity": 10,
@@ -7336,14 +7376,14 @@
             "PricePerUnit": 204
           }
         ],
-        "WeightedSalePrice": 208.65255591054313099041533546,
-        "SaleReference": 194
+        "WeightedSalePrice": 208.48264984227129337539432177,
+        "SaleReference": 204
       },
       "fresh": true,
       "missing": false,
       "historyScope": "NQ / \u904E\u53BB7\u65E5\u4EE5\u5185\u306E\u6700\u5927100\u4EF6\u3002\u5168\u8CA9\u58F2\u91CF\u3067\u306F\u306A\u304F\u53D6\u5F97\u3067\u304D\u305F\u6A19\u672C",
       "historyPossiblyTruncated": true,
-      "observedUnitsPerDay": 357.71428571428571428571428571,
+      "observedUnitsPerDay": 407.57142857142857142857142857,
       "issues": []
     }
   ],
